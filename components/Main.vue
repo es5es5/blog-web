@@ -10,6 +10,7 @@
             class="card-item"
             title="하이"
             contents="Lorem ipsum dolor sit amet."
+            createtime="2020년 09월 19일"
             writerName="김루이"
           />
         </div>

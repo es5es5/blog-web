@@ -7,6 +7,9 @@
     <div class="contents_wrap">
       <p class="contents">{{ contents }}</p>
     </div>
+    <div class="createtime_wrap">
+      <p class="createtime">{{ createtime }} · 조회 152 · 댓글 10</p>
+    </div>
     <div class="writer_wrap">
       <p class="writerName">{{ writerName }}</p>
     </div>
@@ -31,12 +34,19 @@ export default class Card extends Vue {
   @Prop({ type: String, default: '김루이', required: true })
   readonly writerName!: string
 
+  @Prop({ type: String, default: '1999-01-01', required: true })
+  readonly createtime!: string
+
   @Prop({ type: String, default: '', required: false })
   readonly imgUrl!: string
 }
 </script>
 
 <style lang="scss" scoped>
+@mixin card {
+  padding: 10px;
+}
+
 .card-item {
   justify-content: center;
   align-items: center;
@@ -64,21 +74,30 @@ export default class Card extends Vue {
 }
 
 .title_wrap {
-  padding: 10px;
+  @include card;
   font-weight: bold;
   font-size: 16px;
 }
 
 .contents_wrap {
-  padding: 20px 10px;
+  @include card;
   font-weight: lighter;
   font-size: 14px;
   min-height: 100px;
 }
 
-.writer_wrap {
-  padding: 10px;
+.createtime_wrap {
+  @include card;
+  display: flex;
   font-weight: lighter;
+  color: #868E96;
+  font-size: 12px;
+}
+
+.writer_wrap {
+  @include card;
+  display: flex;
+  font-weight: bold;
   font-size: 12px;
 }
 </style>

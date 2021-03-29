@@ -53,7 +53,8 @@ export default Vue.extend({
 }
 
 .header_wrap {
-  width: 1024px;
+  width: 1044px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 </style>
