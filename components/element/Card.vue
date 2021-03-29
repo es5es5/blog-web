@@ -75,7 +75,7 @@ export default class Card extends Vue {
 .thumnail_wrap {
   height: 10em;
   border-radius: 6px 6px 0 0;
-  background-color: rgba(teal, .05);
+  background-color: rgba(deepskyblue, .3);
 }
 
 .title_wrap {
