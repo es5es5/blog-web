@@ -1,25 +1,29 @@
 <template>
   <div>
     <Header />
+    <div class="main_wrap">
+      <Main />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import Header from '@/components/Header.vue'
+import Main from '@/components/Main.vue'
 
 @Component({
   components: {
-    Header
+    Header,
+    Main,
   }
 })
 export default class extends Vue {
-  authorName: string = 'JHyeok'
 }
 </script>
 
 <style lang="scss" scoped>
-.abc {
-  height: 150vh;
+.main_wrap {
+  margin-top: 50px;
 }
 </style>

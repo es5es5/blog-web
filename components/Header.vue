@@ -1,6 +1,8 @@
 <template>
   <div id="header" :class="scrolling ? 'scrolling' : ''">
-    Header
+    <div class="header_wrap">
+      <h1 class="heading">Blog</h1>
+    </div>
   </div>
 </template>
 
@@ -35,8 +37,22 @@ export default Vue.extend({
   left: 0;
   right: 0;
   z-index: 5000;
-  transition: background-color .5s;
+  transition: all .5s;
 
-  &.scrolling { background-color: #fff; }
+  width: 100%;
+  height: 50px;
+  background-color: #87c323;
+  border-bottom: 1px solid transparent;
+
+  &.scrolling {
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+  }
+}
+
+.header_wrap {
+  width: 1024px;
+  margin: 0 auto;
+  color: #fff;
 }
 </style>
