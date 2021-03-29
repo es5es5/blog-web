@@ -6,6 +6,9 @@
     <div class="contents_wrap">
       <p class="contents">{{ contents }}</p>
     </div>
+    <div class="writer_wrap">
+      <p class="writerName">{{ writerName }}</p>
+    </div>
   </div>
 </template>
 
@@ -38,5 +41,36 @@ export default class Card extends Vue {
   align-items: center;
 
   padding: 10px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .1);
+  -webkit-box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .1);
+  -moz-box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .1);
+  transition: all 0.25s ease-in 0s, transform 0.25s ease-in 0s;;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .2);
+    -webkit-box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .2);
+    -moz-box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .2);
+    transform: translatey(-8px);
+  }
+}
+
+.title_wrap {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.contents_wrap {
+  padding: 10px 0;
+  font-weight: lighter;
+  font-size: 14px;
+  min-height: 100px;
+}
+
+.writer_wrap {
+  font-weight: lighter;
+  font-size: 12px;
 }
 </style>

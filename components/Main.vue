@@ -9,7 +9,7 @@
             id="card"
             class="card-item"
             title="하이"
-            contents="헬로우"
+            contents="Lorem ipsum dolor sit amet."
             writerName="김루이"
           />
         </div>
