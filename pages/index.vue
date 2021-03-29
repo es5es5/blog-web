@@ -1,15 +1,12 @@
 <template>
   <div>
     <Header />
-    <div class="abc">
-      a
-    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
-import Header from '@/components/Header'
+import Header from '@/components/Header.vue'
 
 @Component({
   components: {
