@@ -1,5 +1,6 @@
 <template>
   <div :id="id" class="card-item">
+    <div class="thumnail_wrap" />
     <div class="title_wrap">
       <p class="title">{{ title }}</p>
     </div>
@@ -40,7 +41,6 @@ export default class Card extends Vue {
   justify-content: center;
   align-items: center;
 
-  padding: 10px;
   background-color: #fff;
   border-radius: 6px;
   box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .1);
@@ -57,19 +57,27 @@ export default class Card extends Vue {
   }
 }
 
+.thumnail_wrap {
+  height: 180px;
+  border-radius: 6px 6px 0 0;
+  background-color: khaki;
+}
+
 .title_wrap {
+  padding: 10px;
   font-weight: bold;
   font-size: 16px;
 }
 
 .contents_wrap {
-  padding: 10px 0;
+  padding: 20px 10px;
   font-weight: lighter;
   font-size: 14px;
   min-height: 100px;
 }
 
 .writer_wrap {
+  padding: 10px;
   font-weight: lighter;
   font-size: 12px;
 }
