@@ -12,6 +12,7 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'comma-dangle': 0
+    'comma-dangle': 0,
+    'vue/singleline-html-element-content-newline': 0
   }
 }
