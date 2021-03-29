@@ -40,7 +40,7 @@ export default Vue.extend({
   transition: all .3s;
 
   width: 100%;
-  height: 50px;
+  height: 60px;
   color: #87c323;
   background-color: rgba(#fff, .1);
   border-bottom: 1px solid rgba(gray, .25);
@@ -53,8 +53,15 @@ export default Vue.extend({
 }
 
 .header_wrap {
-  width: 1044px;
-  padding: 0 10px;
+  width: 1084px;
+  padding: 0 30px;
   margin: 0 auto;
+}
+
+.heading {
+  vertical-align: middle;
+  line-height: 55px;
+  font-size: 30px;
+  font-weight: bold;
 }
 </style>

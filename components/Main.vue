@@ -31,20 +31,20 @@ export default class Main extends Vue {
 
 <style lang="scss" scoped>
 .card_container {
-  max-width: 1048px;
+  max-width: 1084px;
   margin: 0 auto;
-  padding: 12px;
+  padding: 30px;
 }
 
 .card_wrap {
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
 
   @media (max-width: 1024px) {
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 500px) {
+  @media (max-width: 750px) {
     grid-template-columns: repeat(1, 1fr);
   }
 }

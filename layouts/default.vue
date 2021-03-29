@@ -7,7 +7,7 @@
 <style>
 html {
   font-family:
-    'Source Sans Pro',
+    'Noto Sans KR',
     -apple-system,
     BlinkMacSystemFont,
     'Segoe UI',

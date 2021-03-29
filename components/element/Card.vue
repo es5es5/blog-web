@@ -56,7 +56,12 @@ export default class Card extends Vue {
   box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .1);
   -webkit-box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .1);
   -moz-box-shadow: 0px 0px 50px 15px rgba(187, 187, 187, .1);
-  transition: all 0.25s ease-in 0s, transform 0.25s ease-in 0s;;
+  transition: box-shadow, transform 0.25s ease-in 0s, transform 0.25s ease-in 0s;
+
+  font-size: 16px;
+
+  @media (max-width: 1024px) { font-size: 18px; }
+  @media (max-width: 750px) { font-size: 20px; }
 
   &:hover {
     cursor: pointer;
@@ -68,7 +73,7 @@ export default class Card extends Vue {
 }
 
 .thumnail_wrap {
-  height: 180px;
+  height: 10em;
   border-radius: 6px 6px 0 0;
   background-color: rgba(teal, .05);
 }
@@ -76,28 +81,26 @@ export default class Card extends Vue {
 .title_wrap {
   @include card;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 1.2em;
 }
 
 .contents_wrap {
   @include card;
-  font-weight: lighter;
-  font-size: 14px;
-  min-height: 100px;
+  font-size: 1em;
+  min-height: 8em;
 }
 
 .createtime_wrap {
   @include card;
   display: flex;
-  font-weight: lighter;
   color: #868E96;
-  font-size: 12px;
+  font-size: .8em;
 }
 
 .writer_wrap {
   @include card;
   display: flex;
   font-weight: bold;
-  font-size: 12px;
+  font-size: .8em;
 }
 </style>
