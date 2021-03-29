@@ -20,7 +20,7 @@ export default Vue.extend({
   destroyed () { window.removeEventListener('scroll', this.handleScroll) },
   methods: {
     handleScroll () {
-      if (window.scrollY > 50) {
+      if (window.scrollY > 10) {
         this.scrolling = true
       } else {
         this.scrolling = false
@@ -37,22 +37,23 @@ export default Vue.extend({
   left: 0;
   right: 0;
   z-index: 5000;
-  transition: all .5s;
+  transition: all .3s;
 
   width: 100%;
   height: 50px;
-  background-color: #87c323;
-  border-bottom: 1px solid transparent;
+  color: #87c323;
+  background-color: rgba(#fff, .1);
+  border-bottom: 1px solid rgba(gray, .25);
 
   &.scrolling {
-    background-color: #fff;
-    border-bottom: 1px solid gray;
+    background-color: #87c323;
+    border-bottom: 1px solid transparent;
+    color: #fff;
   }
 }
 
 .header_wrap {
   width: 1024px;
   margin: 0 auto;
-  color: #fff;
 }
 </style>

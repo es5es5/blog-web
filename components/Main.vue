@@ -4,7 +4,7 @@
       <div class="card_container">
         <div class="card_wrap">
           <Card
-            v-for="index in 20"
+            v-for="index in 200"
             :key="index"
             id="card"
             class="card-item"

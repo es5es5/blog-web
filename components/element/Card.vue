@@ -36,5 +36,7 @@ export default class Card extends Vue {
 .card-item {
   justify-content: center;
   align-items: center;
+
+  padding: 10px;
 }
 </style>
