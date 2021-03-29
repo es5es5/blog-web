@@ -1,5 +1,5 @@
 <template>
-  <div :id="id">
+  <div :id="id" class="card-item">
     <div class="title_wrap">
       <p class="title">{{ title }}</p>
     </div>
@@ -33,5 +33,8 @@ export default class Card extends Vue {
 </script>
 
 <style lang="scss" scoped>
-
+.card-item {
+  justify-content: center;
+  align-items: center;
+}
 </style>

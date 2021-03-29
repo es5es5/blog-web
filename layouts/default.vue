@@ -24,6 +24,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F8F9FA;
+}
+
 *,
 *::before,
 *::after {

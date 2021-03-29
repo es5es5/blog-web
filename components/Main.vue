@@ -1,11 +1,19 @@
 <template>
   <div>
     <main>
-      <Card
-        id="card"
-        title="하이"
-        contents="헬로우"
-      />
+      <div class="card_container">
+        <div class="card_wrap">
+          <Card
+            v-for="index in 20"
+            :key="index"
+            id="card"
+            class="card-item"
+            title="하이"
+            contents="헬로우"
+            writerName="김루이"
+          />
+        </div>
+      </div>
     </main>
   </div>
 </template>
@@ -14,12 +22,29 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({
+  name: 'Main'
 })
 export default class Main extends Vue {
-  abc: string = 'P'
-  get _abc (): string { return this.abc }
 }
 </script>
 
 <style lang="scss" scoped>
+.card_container {
+  max-width: 1048px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+.card_wrap {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media (max-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 </style>
