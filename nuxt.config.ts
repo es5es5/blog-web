@@ -3,6 +3,10 @@ export default {
     host: '0.0.0.0', // default: localhost
     port: '3000'
   },
+  // Then it will fallback to the generated 404.html when in SPA mode instead of Netlify's 404 page.
+  generate: {
+    fallback: true
+  },
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
