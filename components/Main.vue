@@ -1,7 +1,11 @@
 <template>
   <div>
     <main>
-      <Card />
+      <Card
+        id="card"
+        title="하이"
+        contents="헬로우"
+      />
     </main>
   </div>
 </template>
