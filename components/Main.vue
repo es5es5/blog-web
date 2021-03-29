@@ -1,7 +1,7 @@
 <template>
   <div>
     <main>
-      {{ _abc }}
+      <Card />
     </main>
   </div>
 </template>
@@ -10,13 +10,10 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({
-  name: 'Main',
 })
 export default class Main extends Vue {
   abc: string = 'P'
-  get _abc (): string {
-    return this.abc
-  }
+  get _abc (): string { return this.abc }
 }
 </script>
 
