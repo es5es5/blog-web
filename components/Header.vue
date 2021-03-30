@@ -19,13 +19,7 @@ export default Vue.extend({
   beforeMount () { window.addEventListener('scroll', this.handleScroll) },
   destroyed () { window.removeEventListener('scroll', this.handleScroll) },
   methods: {
-    handleScroll () {
-      if (window.scrollY > 10) {
-        this.scrolling = true
-      } else {
-        this.scrolling = false
-      }
-    },
+    handleScroll () { this.scrolling = window.scrollY > 10 },
   }
 })
 </script>
@@ -53,7 +47,7 @@ export default Vue.extend({
 }
 
 .header_wrap {
-  width: 1084px;
+  max-width: 1084px;
   padding: 0 30px;
   margin: 0 auto;
 }
@@ -64,6 +58,6 @@ export default Vue.extend({
   font-size: 30px;
   font-weight: bold;
 
-  :hover { cursor: pointer; }
+  &:hover { cursor: pointer; }
 }
 </style>
