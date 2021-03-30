@@ -1,7 +1,7 @@
 <template>
   <div id="header" :class="scrolling ? 'scrolling' : ''">
     <div class="header_wrap">
-      <h1 class="heading">Blog</h1>
+      <nuxt-link tag="h1" :to="{ name: 'index' }" class="heading">Blog</nuxt-link>
     </div>
   </div>
 </template>
@@ -63,5 +63,7 @@ export default Vue.extend({
   line-height: 55px;
   font-size: 30px;
   font-weight: bold;
+
+  :hover { cursor: pointer; }
 }
 </style>
