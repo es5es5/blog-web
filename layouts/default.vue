@@ -4,6 +4,22 @@
   </div>
 </template>
 
+<script>
+export default {
+  head () {
+    return {
+      title: 'Blog',
+      meta: [
+        {
+          name: 'Blog',
+          content: 'My Blog'
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <style>
 html {
   font-family:
