@@ -44,7 +44,7 @@ export default class Card extends Vue {
 
 <style lang="scss" scoped>
 @mixin card {
-  padding: 10px;
+  padding: 20px;
 }
 
 .card-item {
@@ -87,11 +87,13 @@ export default class Card extends Vue {
 .contents_wrap {
   @include card;
   font-size: 1em;
-  min-height: 8em;
+  min-height: 50px;
 }
 
 .createtime_wrap {
   @include card;
+  padding-top: 10px;
+  padding-bottom: 1em;
   display: flex;
   color: #868E96;
   font-size: .8em;
@@ -99,6 +101,8 @@ export default class Card extends Vue {
 
 .writer_wrap {
   @include card;
+  padding-top: 10px;
+  padding-bottom: 1em;
   display: flex;
   font-weight: bold;
   font-size: .8em;
