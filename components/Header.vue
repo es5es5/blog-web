@@ -40,7 +40,7 @@ export default Vue.extend({
   border-bottom: 1px solid rgba(gray, .25);
 
   &.scrolling {
-    background-color: #87c323;
+    background-color: rgba(#87c323, .95);
     border-bottom: 1px solid transparent;
     color: #fff;
   }
@@ -54,7 +54,7 @@ export default Vue.extend({
 
 .heading {
   vertical-align: middle;
-  line-height: 55px;
+  line-height: 60px;
   font-size: 30px;
   font-weight: bold;
 

@@ -40,6 +40,9 @@ export default class CardDetail extends Vue {
   margin: 0 auto;
 
   font-size: 20px;
+
+  @media (max-width: 1024px) { font-size: 18px; }
+  @media (max-width: 750px) { font-size: 16px; }
 }
 
 .title {
