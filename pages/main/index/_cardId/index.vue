@@ -21,7 +21,11 @@ import { Component, Vue } from 'nuxt-property-decorator'
 @Component({
   name: 'CardDetail',
   created () {
-    window.scrollTo({ top: 0 })
+    // window.scrollTo({ top: 0 })
+    this.$Progress.start()
+    setTimeout(() => {
+      this.$Progress.finish()
+    }, 1000)
   }
 })
 export default class CardDetail extends Vue {

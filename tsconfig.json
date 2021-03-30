@@ -34,5 +34,9 @@
     "node_modules",
     ".nuxt",
     "dist"
+  ],
+  "files": [
+    "./vue-shim.d.ts",
+    "./vue-progressbar.d.ts",
   ]
 }

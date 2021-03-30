@@ -1,6 +1,9 @@
 <template>
   <div>
     <Nuxt />
+    <no-ssr>
+      <vue-progress-bar />
+    </no-ssr>
   </div>
 </template>
 
