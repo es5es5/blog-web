@@ -23,7 +23,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 html {
   font-family:
     'Noto Sans KR',
@@ -59,5 +59,11 @@ ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.btn {
+  &:hover {
+    cursor: pointer;
+  }
 }
 </style>

@@ -36,7 +36,7 @@
     "dist"
   ],
   "files": [
-    "./vue-shim.d.ts",
-    "./vue-progressbar.d.ts",
+    "./typescript/vue-shim.d.ts",
+    "./typescript/vue-progressbar.d.ts",
   ]
 }

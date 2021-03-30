@@ -2,6 +2,7 @@
   <div id="header" :class="scrolling ? 'scrolling' : ''">
     <div class="header_wrap">
       <nuxt-link tag="h1" :to="{ name: 'index' }" class="heading">Blog</nuxt-link>
+      <!-- <nuxt-link tag="button" :to="{ name: 'login' }" class="btn login">로그인</nuxt-link> -->
     </div>
   </div>
 </template>
@@ -47,17 +48,23 @@ export default Vue.extend({
 }
 
 .header_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   max-width: 1084px;
   padding: 0 30px;
   margin: 0 auto;
 }
 
 .heading {
-  vertical-align: middle;
+  display: inline-block;
   line-height: 60px;
   font-size: 30px;
   font-weight: bold;
 
   &:hover { cursor: pointer; }
+}
+
+.login {
 }
 </style>
