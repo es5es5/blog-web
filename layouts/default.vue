@@ -42,6 +42,7 @@ html {
 
 body {
   background-color: #F8F9FA;
+  min-height: 100vh;
 }
 
 *,

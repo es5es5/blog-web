@@ -6,6 +6,7 @@
           <Card
             v-for="index in 200"
             :key="index"
+            @click.native="goDetail('card')"
             id="card"
             class="card-item"
             title="하이"
@@ -23,7 +24,16 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({
-  name: 'Main'
+  name: 'Main',
+  methods: {
+    goDetail (cardId) {
+      console.log(`${this.$route.name}-${cardId}`)
+      this.$router.push({
+        name: `${this.$route.name}-cardId`,
+        params: { cardId }
+      })
+    }
+  }
 })
 export default class Main extends Vue {
 }
